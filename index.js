@@ -20,7 +20,7 @@ module.exports = (function (snowpackConfig, pluginOptions) {
         config: function (snowpackConfig) {
             var _a;
             var _b;
-            ((_a = (_b = snowpackConfig.installOptions.rollup).plugins) !== null && _a !== void 0 ? _a : (_b.plugins = [])).push({
+            ((_a = (_b = snowpackConfig.packageOptions.rollup).plugins) !== null && _a !== void 0 ? _a : (_b.plugins = [])).push({
                 name: "rollup-plugin-acorn-injection",
                 options: function (options) {
                     if (acornPlugins.length !== 0) {
